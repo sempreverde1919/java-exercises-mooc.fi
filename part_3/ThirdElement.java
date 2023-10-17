@@ -15,11 +15,11 @@ public class ThirdElement {
     public static void main(String[] args) {
         ArrayList<String> list = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
-        String input = " ";
 
-        while(!input.isEmpty()){
+        while(true){
             System.out.print("Input a string: ");
-            input = scanner.nextLine();
+            String input = scanner.nextLine();
+            if(input.equals("")) break;
             list.add(input);
         }
         scanner.close();
